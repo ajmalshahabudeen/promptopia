@@ -11,7 +11,7 @@ export const connectDB = async () => {
     }
     try {
         await mongoose.connect(process.env.MONGO_URI, {
-            dbName: process.env.MONGO_DB_NAME,
+            dbName: "share_prompt",
             useNewUrlParser: true,
             useUnifiedTopology: true,
         })
